@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (workingHours == 8) {
-            totalPayout = 140;
+            totalPayout = 800;
         }
 
         if (workingHours > 8) {
-            totalPayout = 140 + overtimePayFormula2;
+            totalPayout = 800 + overtimePayFormula2;
         }
 
         switch (v.getId()) {
