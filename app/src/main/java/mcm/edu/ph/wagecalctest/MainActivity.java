@@ -36,23 +36,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double overtimePay = 0.0;
         double totalPayout = 0.0;
         double answer = 0.0;
-        double maxRegularHours = 0.0;
+        double max = 8;
 
 
-        double regularPayFormula, overtimePayFormula1, overtimePayFormula2, totalPayFormula;
+        double regularPayFormula, overtimePayFormula1, overtimePayFormula2;
 
         workingHours = Double.parseDouble(workTimeInput.getText().toString());
         regularPay = 17.50;
         overtimePay = 26.25;
-        maxRegularHours = 8;
 
 
         regularPayFormula = workingHours * regularPay;
-        overtimePayFormula1 = workingHours - maxRegularHours;
+        overtimePayFormula1 = workingHours - max;
         overtimePayFormula2 = overtimePayFormula1 * overtimePay;
 
         if (workingHours < 8) {
             totalPayout = regularPayFormula;
+        }
+
+        if (workingHours == 8) {
+            totalPayout = 140;
         }
 
         if (workingHours > 8) {
