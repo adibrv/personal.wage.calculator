@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         workingHours = Double.parseDouble(workTimeInput.getText().toString());
         regularPay = 17.50;
         overtimePay = 26.25;
-        maxRegularHours = 8
+        maxRegularHours = 8;
 
 
         regularPayFormula = workingHours * regularPay;
