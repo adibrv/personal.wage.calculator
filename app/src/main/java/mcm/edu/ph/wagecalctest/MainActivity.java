@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         regularPay = 100;
         overtimePay = 130;
 
-
         regularPayFormula = workingHours * regularPay;
         overtimePayFormula1 = workingHours - max;
         overtimePayFormula2 = overtimePayFormula1 * overtimePay;
@@ -68,10 +67,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 totalPay.setText(Double.toString(answer));
                 break;
         }
-
-
-
-
-
     }
 }
